@@ -38,11 +38,11 @@ nav {
     #logo {
         padding: 17px 0;
     }
-    #logo-block{
-    	z-index: 2;
-    	@media only screen and (max-width: 960px) {
-			background: #000;
-    	}
+    #logo-block {
+        z-index: 2;
+        @media only screen and (max-width: 960px) {
+            background: #000;
+        }
     }
 }
 
@@ -53,8 +53,8 @@ nav {
     margin-top: -37px;
     max-width: 1920px;
     @media only screen and (max-width: 960px) {
-		background: url("../img/mb-bg.png") no-repeat top center;
-    	background-size: cover;
+        background: url("../img/mb-bg.png") no-repeat top center;
+        background-size: cover;
     }
     .share-block {
         cursor: pointer;
@@ -65,12 +65,12 @@ nav {
         margin-top: -27px;
         width: 82px;
         z-index: 3;
-		@media only screen and (max-width: 620px) {
-	        padding: 12px 0;
-	    }
-		@media only screen and (max-width: 960px) {
-	        padding: 14.1px 0;
-	    }
+        @media only screen and (max-width: 620px) {
+            padding: 12px 0;
+        }
+        @media only screen and (max-width: 960px) {
+            padding: 14.1px 0;
+        }
         &:hover {
             background: #222222;
             // @media only screen and (max-width: 441px) {
@@ -115,7 +115,7 @@ nav {
 #main-text {
     padding: 15.6% 0 4% 0;
     @media only screen and (max-width: 960px) {
-		text-align: center;
+        text-align: center;
     }
     h2,
     h3 {
@@ -130,18 +130,18 @@ nav {
     h2 {
         font-size: 5em;
         @media only screen and (max-width: 440px) {
-			font-size: 3.5em;
-	    }
+            font-size: 3.5em;
+        }
     }
 }
 
 .main-download {
     height: 185px;
     @media only screen and (max-width: 960px) {
-		text-align: center;
+        text-align: center;
     }
     @media only screen and (max-width: 440px) {
-		height: 200px;
+        height: 200px;
     }
     p {
         color: #fff;
@@ -156,6 +156,7 @@ nav {
         }
     }
 }
+
 #service {
     padding: 4% 0;
     #service-block {
@@ -179,6 +180,7 @@ nav {
         }
     }
 }
+
 #presentation {
     position: relative;
     top: 50px;
@@ -201,6 +203,9 @@ nav {
             @media only screen and (max-width: 1000px) {
                 background: none;
                 margin-left: auto;
+            }
+            @media only screen and (max-width: 605px) {
+                height: 909px;
             }
             #video {
                 margin: 0 auto;
@@ -234,6 +239,9 @@ nav {
                 @media only screen and (max-width: 1000px) {
                     top: 7%;
                 }
+                @media only screen and (max-width: 450px) {
+                    top: 5%;
+                }
                 h2 {
                     font-family: $roboto;
                     font-weight: bold;
@@ -259,6 +267,7 @@ nav {
         }
     }
 }
+
 footer {
     background: #000;
     margin-top: -34px;
@@ -269,18 +278,15 @@ footer {
         font-family: $roboto-light;
         margin-top: 10px;
     }
-    
     .yellow-text {
         color: $yellow;
     }
-    
     .link-text {
         color: $yellow;
         &:hover {
             color: #fff;
         }
     }
-    
     .soc-set {
         background: url("../img/icons/container-icons.png") no-repeat;
         background-position: 0px 0px;
