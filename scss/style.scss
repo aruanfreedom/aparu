@@ -38,12 +38,24 @@ nav {
     #logo {
         padding: 17px 0;
     }
+    #logo-block{
+    	z-index: 2;
+    	@media only screen and (max-width: 960px) {
+			background: #000;
+    	}
+    }
 }
 
 #main-content {
-    background: url("../img/header-bg.png") no-repeat top center;
+    background: url("../img/header-bg.png") no-repeat #000 top center;
     background-size: cover;
+    background-position: 75% center;
     margin-top: -37px;
+    max-width: 1920px;
+    @media only screen and (max-width: 960px) {
+		background: url("../img/mb-bg.png") no-repeat top center;
+    	background-size: cover;
+    }
     .share-block {
         cursor: pointer;
         padding: 17px 0;
@@ -52,6 +64,7 @@ nav {
         right: 0;
         margin-top: -27px;
         width: 82px;
+        z-index: 3;
 		@media only screen and (max-width: 620px) {
 	        padding: 12px 0;
 	    }
@@ -101,6 +114,9 @@ nav {
 
 #main-text {
     padding: 15.6% 0 4% 0;
+    @media only screen and (max-width: 960px) {
+		text-align: center;
+    }
     h2,
     h3 {
         color: #fff;
@@ -113,11 +129,20 @@ nav {
     }
     h2 {
         font-size: 5em;
+        @media only screen and (max-width: 440px) {
+			font-size: 3.5em;
+	    }
     }
 }
 
 .main-download {
     height: 185px;
+    @media only screen and (max-width: 960px) {
+		text-align: center;
+    }
+    @media only screen and (max-width: 440px) {
+		height: 200px;
+    }
     p {
         color: #fff;
         font-size: 1.125em;
@@ -240,8 +265,9 @@ footer {
     padding: 2% 0;
     p {
         color: #fff;
-        font-size: 1.25em;
+        font-size: 1em;
         font-family: $roboto-light;
+        margin-top: 10px;
     }
     
     .yellow-text {
@@ -261,6 +287,7 @@ footer {
         display: inline-block;
         overflow: hidden;
         margin-left: 15px;
+        margin-top: 10px;
         height: 22px;
         width: 24px;
         &.ok {
