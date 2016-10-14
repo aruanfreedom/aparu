@@ -40,7 +40,7 @@ nav {
     }
     #logo-block {
         z-index: 2;
-        @media only screen and (max-width: 960px) {
+        @media only screen and (max-width: 1070px) {
             background: #000;
         }
     }
@@ -52,7 +52,7 @@ nav {
     background-position: 75% center;
     margin-top: -37px;
     max-width: 1920px;
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1070px) {
         background: url("../img/mb-bg.png") no-repeat top center;
         background-size: cover;
     }
@@ -67,9 +67,6 @@ nav {
         z-index: 3;
         @media only screen and (max-width: 620px) {
             padding: 12px 0;
-        }
-        @media only screen and (max-width: 960px) {
-            padding: 14.1px 0;
         }
         &:hover {
             background: #222222;
