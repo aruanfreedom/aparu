@@ -4,9 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>APARU - вызов машины одной кнопкой</title>
-    <meta name="description" content="">
+    <title>APARU</title>
+    <meta name="description" content="Самый простой вызов машины - одной кнопкой!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="APARU вызов машины одной кнопкой" />
+    <meta property="og:title" content="Aparu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://taxi.aparu.kz/img/logo-big.png" />
+    <meta property="og:description"   content="Самый простой вызов машины - одной кнопкой!" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" href="favicon.png" />
     <!-- Place favicon.ico in the root directory -->
@@ -15,6 +20,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -45,18 +51,17 @@
                     <img src="img/icons/share.png" class="share" alt="share апару">
                     <div class="share-content text-left">
                         <h3>Поделиться</h3>
-                        <div class="share-soc-set text-center">
-                            <a href="https://ok.ru/aparu.company/" target="_blank"><img src="img/icons/ok.png" alt="одноклассники апару"></a>
+                        <div class="share-soc-set text-center" id="od">
+                            <img src="img/icons/ok.png" alt="одноклассники апару">
+                        </div>
+                        <div class="share-soc-set text-center" id='vk'>
+                            <img src="img/icons/vk.png" alt="вк апару">                          
                         </div>
                         <div class="share-soc-set text-center">
-                            <a href="https://vk.com/aparu" target="_blank"><img src="img/icons/vk.png" alt="вк апару"></a>
+                            <img src="img/icons/instagram.png" alt="instagram апару">
                         </div>
-                        <div class="share-soc-set text-center">
-                            <a href="https://www.instagram.com/aparu.company/" target="_blank"><img src="img/icons/instagram.png" alt="instagram апару"></a>
-                        </div>
-                        <div class="share-soc-set text-center">
-                            <a href="https://www.facebook.com/aparu.company" target="_blank"><img src="img/icons/facebook.png" alt="facebook апару">
-                            </a>
+                        <div class="share-soc-set text-center" id="fb">
+                            <img src="img/icons/facebook.png" alt="facebook апару">
                         </div>
                     </div>
                 </div>
@@ -161,6 +166,12 @@
             <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/976768248/?guid=ON&amp;script=0" />
         </div>
     </noscript>
+    <script>
+        $("#vkShare").on('click', function () {
+            VK.Share.button('http://taxi.aparu.kz', {type: 'link'});
+            console.log(VK);
+        });
+    </script>
 </body>
 
 </html>
